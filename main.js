@@ -69,7 +69,7 @@ var img = c.toDataURL("image/png");
 
 var link = document.createElement('a');
 link.href = document.getElementById("canvas").toDataURL();
-link.download = 'sprite_sheet.jpg';
+link.download = 'sprite_sheet.png';
 document.body.appendChild(link);
 link.click();
 clearStuff()
