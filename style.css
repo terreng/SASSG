@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/roboto/v18/CrYjSnGjrRCn0pd9VQsnFOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+
+
+body {
+height: 100%;
+overflow: hidden;
+font-family: 'Roboto', sans-serif;
+margin: 10px;
+background: rgb(224, 224, 224);
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; 
+			
+-webkit-overflow-scrolling: touch !important;
+overscroll-behavior-y: contain;
+}
+
+.button {
+padding: 10px 17px;
+background-color: #2196F3;
+width: auto;
+float:left; 
+display:inline;
+text-align: center;
+color: white;
+font-size: 20px;
+border-radius: 2px;
+margin-right: 15px;
+}
+
+.button:hover {
+background-color: #64B5F6;
+cursor: pointer;
+}
+
+.button.active{
+background-color: #1565C0;
+}
+
+.button.red {
+background-color: #F44336;
+}
+
+.button.red:hover {
+background-color: #E57373;
+}
+
+.button.red.active {
+background-color: #C62828;
+}
+
+.button.gray {
+background-color: #9E9E9E;
+}
+
+.button.gray:hover {
+background-color: #BDBDBD;
+}
+
+.button.gray.active {
+background-color: #424242;
+}
+
+.login_button:hover {
+background-color: #9CCC65;
+}
+
+.buttons {
+overflow: hidden
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Sprite Sheet Generator</title>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0' name='viewport' />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="robots" content="noindex">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<link href="style.css" rel="stylesheet">
+<script type='application/javascript' src='main.js'></script>
+</head>
+
+<body>
+<div style="font-size: 20px; padding-bottom: 10px;">Super Awesome Sprite Sheet Generator (SASSG)</div>
+
+<label for="file_input" class="button" style="cursor: pointer;width: 123px;text-align: center;align-items: center;padding: 10px 4px;padding-left: 7px;">
+    Add Images
+<input type="file" accept="image/*" id="file_input" style="height: 0px;width: 0px;overflow: hidden;/* display: none; */border: 0;padding: 0;font-size: 1px;" multiple="" onchange="updateSpriteSheet()">
+</label>
+
+<div id="clear" class="button gray" onclick="clearStuff()">
+Reset Images
+</div>
+
+<div class="button gray" id="gen" onclick="generate()">Generate Sprite Sheet</div>
+<br><br>
+<div style="font-size: 20px; padding-top: 15px;" id="img_count">0 images selected</div>
+
+<div id="stuff" style="visibility: hidden">
+
+</div>
+
+<canvas id="canvas" style="visibility: hidden">
+
+</canvas>
+
+
+
+</body>
+</html>
